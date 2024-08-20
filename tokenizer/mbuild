@@ -1,0 +1,38 @@
+cpp_library:
+  name: token
+  sources: token.cpp
+  headers: token.hpp
+  libs:
+    /bee/format
+    /bee/mp
+
+cpp_library:
+  name: token_reader
+  headers: token_reader.hpp
+  libs: typed_token
+
+cpp_library:
+  name: tokenizer
+  sources: tokenizer.cpp
+  headers: tokenizer.hpp
+  libs:
+    /bee/file_path
+    /bee/file_reader
+    /bee/format
+    /bee/or_error
+    token
+    typed_token
+
+cpp_test:
+  name: tokenizer_test
+  sources: tokenizer_test.cpp
+  libs:
+    /bee/testing
+    tokenizer
+  output: tokenizer_test.out
+
+cpp_library:
+  name: typed_token
+  headers: typed_token.hpp
+  libs: token
+

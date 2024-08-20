@@ -1,0 +1,15 @@
+================================================================================
+Test: basic
+line:1 col:1 Identifier(foo)
+line:1 col:5 Identifier(bar)
+line:1 col:9 OpenParens
+line:1 col:11 CloseParens
+line:1 col:13 OpenBraces
+line:1 col:15 CloseBraces
+line:1 col:17 OpenParens
+line:1 col:19 CloseParens
+line:1 col:21 Equal
+line:1 col:24 LessEq
+line:1 col:27 Less
+line:1 col:28 Less
+
